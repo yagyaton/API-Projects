@@ -4,11 +4,11 @@ from twilio.rest import Client
 THRESHPRECENTAGE=2
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-ALPHA_API_KEY="IAJLKULNXP4HH8X4"
+ALPHA_API_KEY=alpha_api_key
 FUNCTION="TIME_SERIES_DAILY"
-NEWS_API_KEY='3f7113e7eee84cc4bac25a6c46e2bed4'
-account_sid='ACf857a33fe35b711b4be39f7fabd7d58b'
-auth_token='236a58c797e5d029228f648556ba2d0a'
+NEWS_API_KEY=my_api_key
+account_sid=my_sid
+auth_token=my_auth_token
 
 ## STEP 1: Use https://www.alphavantage.co
 # When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
