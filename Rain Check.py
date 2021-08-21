@@ -2,7 +2,7 @@
 import requests
 from twilio.rest import Client
 
-openweather_api_key="6145ebebb8919b152b3c462cd034e5ca"
+openweather_api_key=op_key
 MYLAT=28.354204
 MYLNG=75.592577
 
@@ -31,16 +31,16 @@ print(raintoday)
 
 
 #----------------------Sending myself a message using my account credentials on Twilio----------------------------------#
-account_sid='ACf857a33fe35b711b4be39f7fabd7d58b'
-auth_token='236a58c797e5d029228f648556ba2d0a'
+account_sid=xyz
+auth_token=abc
 
 if raintoday:
     client=Client(account_sid, auth_token)
     message = client.messages \
                 .create(
                      body="Hi Brother, How do you do \nMight rain today.\nYours sincerely,\nTon",
-                     from_='+16822551650',
-                     to='+91 9460186060'
+                     from_=twilionumber,
+                     to=myno
                  )
 
     print(message.status)
